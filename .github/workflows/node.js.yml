@@ -22,7 +22,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
       - uses: actions/upload-artifact@master
-        with:
+    needs: build
           name: webpack artifacts
           path: public/
     - uses: actions/checkout@v2
